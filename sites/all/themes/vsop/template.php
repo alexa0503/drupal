@@ -12,6 +12,7 @@ function vsop_preprocess_maintenance_page(&$vars) {
   vsop_preprocess_html($vars);
 }
 
+
 /**
  * Override or insert variables into the html template.
  */
@@ -101,20 +102,6 @@ function vsop_tablesort_indicator($variables) {
  * Implements hook_css_alter().
  */
 function vsop_css_alter(&$css) {
-  // Use Seven's vertical tabs style instead of the default one.
-  if (isset($css['misc/vertical-tabs.css'])) {
-    $css['misc/vertical-tabs.css']['data'] = drupal_get_path('theme', 'vsop') . '/vertical-tabs.css';
-    $css['misc/vertical-tabs.css']['type'] = 'file';
-  }
-  if (isset($css['misc/vertical-tabs-rtl.css'])) {
-    $css['misc/vertical-tabs-rtl.css']['data'] = drupal_get_path('theme', 'vsop') . '/vertical-tabs-rtl.css';
-    $css['misc/vertical-tabs-rtl.css']['type'] = 'file';
-  }
-  // Use Seven's jQuery UI theme style instead of the default one.
-  if (isset($css['misc/ui/jquery.ui.theme.css'])) {
-    $css['misc/ui/jquery.ui.theme.css']['data'] = drupal_get_path('theme', 'vsop') . '/jquery.ui.theme.css';
-    $css['misc/ui/jquery.ui.theme.css']['type'] = 'file';
-  }
 }
 
 
@@ -127,9 +114,9 @@ function vsop_css_alter(&$css) {
 function vsop_preprocess_block(&$variables, $hook) {
   // allow to use block templates depend on delta
   // example: delta = main-menu ; template file: block--main-menu.tpl.php
- if ($variables['block']->delta == 'main-menu') {
-    $variables['theme_hook_suggestions'][] = 'block__' . str_replace('-', '_', $variables['block']->delta);
- }
+     if ($variables['block']->delta == 'main-menu') {
+        $variables['theme_hook_suggestions'][] = 'block__' . str_replace('-', '_', $variables['block']->delta);
+     }
 }
 
 /**
