@@ -195,7 +195,7 @@ var manifest;
 var preload;
 function loadIndexImg() {
 	manifest = [];
-	manifest.push('images/index/kvBg.jpg');
+	manifest.push('/sites/all/themes/vsop/images/index/kvBg.jpg');
 	for(var i=1;i<=66;i++){
 		var s=i;
 		s=s.toString();
@@ -205,7 +205,7 @@ function loadIndexImg() {
 			else if(s.length==2){
 				s='0'+s;
 				}
-		manifest.push('images/index/act/'+s+'.png');
+		manifest.push('/sites/all/themes/vsop/images/index/act/'+s+'.png');
 		}
 
 	startPreload();
@@ -238,7 +238,7 @@ function playKv(){
 		else if(kvsstr.length==2){
 			kvsstr='0'+kvsstr;
 			}
-	$('.kvEf').css('background-image','url(images/index/act/'+kvsstr+'.png)');
+	$('.kvEf').css('background-image','url(/sites/all/themes/vsop/images/index/act/'+kvsstr+'.png)');
 	kvs++;
 	}
 

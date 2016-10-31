@@ -30,10 +30,10 @@ $logo = $matches[1][0];
 preg_match_all('/<img.*?src="(.*?)".*?>/is',$fields['field_bottle']->content,$matches);
 $bottle = $matches[1][0];
 ?>
-        	<div class="col-xs-12">
-                <div class="innerDiv">
-<img src="<?php echo $bkg;?>" class="mobileShow" width="1240" height="718">
+<div class="col-xs-12">
+<div class="innerDiv">
+<img src="<?php echo $bkg;?>" class="mobileShow"  width="100%">
 <img src="<?php echo $logo;?>" class="abs bkLogo">
 <img src="<?php echo $bottle;?>" class="abs bkBottle">
-    </div>
+</div>
 </div>

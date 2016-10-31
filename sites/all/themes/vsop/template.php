@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Override or insert variables into the maintenance page template.
  */
@@ -11,6 +10,40 @@ function vsop_preprocess_maintenance_page(&$vars) {
   // called here.
   vsop_preprocess_html($vars);
 }
+function vsop_css_alter(&$css){
+    foreach ($css as $key => $value) {
+        if ($value['group'] != CSS_THEME) {
+            unset($css[$key]);
+        }
+    }
+    //var_dump(array_keys($css));
+}
+//semanticviews-view-unformatted--cool--product-menu.tpl
+function vsop_preprocess_semanticviews_view_unformatted(&$variables) {
+    //var_dump($variables['view']->result[0]);
+    //if( $variables['view'])
+    //var_dump($variables['name'],$variables['display_id']);
+}
+function vsop_js_alter(&$javascript) {
+
+    //drupal_static_reset('drupal_add_js');
+    foreach ($javascript as $key => $value) {
+        if( $value['group'] != CSS_THEME ){
+            unset($javascript[$key]);
+        }
+    }
+    /*
+    drupal_add_js(path_to_theme().'/js/jquery-2.1.1.min.js');
+    drupal_add_js(path_to_theme().'/js/bootstrap.min.js');
+    drupal_add_js(path_to_theme().'/js/jquery.touchSwipe.min.js');
+    drupal_add_js(path_to_theme().'/js/html5lightbox/html5lightbox.js');
+    drupal_add_js(path_to_theme().'/js/jquery.mCustomScrollbar.concat.min.js');
+    drupal_add_js('http://player.youku.com/jsapi');
+    drupal_add_js(path_to_theme().'/js/bxslider/jquery.bxslider.min.js');
+    drupal_add_js(path_to_theme().'/js/common.js');
+    */
+
+}
 
 
 /**
@@ -18,11 +51,11 @@ function vsop_preprocess_maintenance_page(&$vars) {
  */
 function vsop_preprocess_html(&$vars) {
   // Add conditional CSS for IE8 and below.
-  drupal_add_css(path_to_theme() . '/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  //drupal_add_css(path_to_theme() . '/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
   // Add conditional CSS for IE7 and below.
-  drupal_add_css(path_to_theme() . '/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  //drupal_add_css(path_to_theme() . '/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
   // Add conditional CSS for IE6.
-  drupal_add_css(path_to_theme() . '/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
+  //drupal_add_css(path_to_theme() . '/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 6', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
 }
 
 /**
@@ -98,11 +131,6 @@ function vsop_tablesort_indicator($variables) {
   }
 }
 
-/**
- * Implements hook_css_alter().
- */
-function vsop_css_alter(&$css) {
-}
 
 
 
@@ -125,14 +153,14 @@ function vsop_preprocess_block(&$variables, $hook) {
  */
 function vsop_menu_tree__main_menu($variables) {
     global $level;
-    $div = ($level == 1) ? '<!--<div></div>-->' : '';
+    //$div = ($level == 1) ? '<!--<div></div>-->' : '';
     $ul = '<ul class="nav navbar-nav">' . $variables['tree'] . '
     <div class="snsLine">
         <a href="javascript:void(0);" onClick="showNavQc();"><img src="'.path_to_theme().'/images/navIcon1.png" width="23"></a>
         <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon2.png" width="23"></a>
         <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon3.png" width="23"></a>
         <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon4.png" width="23"></a>
-    </div></ul>' . $div;
+    </div></ul>';
     return $ul;
 }
 
@@ -161,13 +189,16 @@ function vsop_menu_link__main_menu($variables) {
   }
 
   // link output
+  $element['#localized_options']['attributes']['class'] = [];
   $element['#localized_options']['attributes']['class'][] = 'centerA';
   $output = l($title, $element['#href'], $element['#localized_options']);
 
   // if link class is active, make li class as active too
+  $element['#attributes']['class'] = [];
   if(strpos($output,"active")>0){
     $element['#attributes']['class'][] = "active";
   }
+  //unset($element['#attributes'][0]);
 
   $attr = drupal_attributes($element['#attributes']);
   return  '<li' . $attr . '>' . $output .$sub_menu . "</li>\n";

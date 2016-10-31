@@ -12,13 +12,12 @@
             <div class="navbar-brand"><img src="<?php print path_to_theme();?>/images/navLogo.png"></div>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-
             <?php print $content; ?>
             <ul class="nav navbar-nav navbar-right">
                 <li class="navIcon navIcon1"><a href="#"></a></li>
                 <li class="navIcon navIcon2"><a href="#"></a></li>
                 <li class="navIcon navIcon3"><a href="#"></a></li>
-                <li class="navIcon navIcon4"><a href="#"></a></li>
+                <!--<li class="navIcon navIcon4"><a href="#"></a></li>-->
             </ul>
         </div>
     </div>

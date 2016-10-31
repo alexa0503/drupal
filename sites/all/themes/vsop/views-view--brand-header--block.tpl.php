@@ -27,9 +27,6 @@
  * @ingroup views_templates
  */
 ?>
-<div class="brandKv">
-	<div class="container kvBg" style="width:100%; max-width:1920px;">
-                <div class="<?php //echo $classes; ?>container">
                   <?php echo render($title_prefix); ?>
                   <?php if ($title): ?>
                     <?php echo $title; ?>
@@ -86,6 +83,4 @@
                       <?php echo $feed_icon; ?>
                     </div>
                 <?php endif;?>
-    </div>
-</div>
 <?php /* class view */ ?>
