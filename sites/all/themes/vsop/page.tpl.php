@@ -5,6 +5,7 @@
   </div>
 <?php else: ?>
 <?php echo render($page['content']);?>
+<script src="/<?php echo path_to_theme();?>/js/preloadjs-0.6.2.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/bootstrap.min.js"></script>
     <?php if (arg(0) == 'discover'):?>
     <script type="text/javascript" src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
@@ -30,7 +31,6 @@
    </script>
    <?php elseif (arg(0) == 'burst'):?>
 
-<script src="/<?php echo path_to_theme();?>/js/preloadjs-0.6.2.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/jquery.mCustomScrollbar.concat.min.js"></script>

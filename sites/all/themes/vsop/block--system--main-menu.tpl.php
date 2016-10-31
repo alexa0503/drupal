@@ -15,8 +15,8 @@
             <?php print $content; ?>
             <ul class="nav navbar-nav navbar-right">
                 <li class="navIcon navIcon1"><a href="#"></a></li>
-                <li class="navIcon navIcon2"><a href="#"></a></li>
-                <li class="navIcon navIcon3"><a href="#"></a></li>
+                <li class="navIcon navIcon2"><a href="http://weibo.com/hennessyclassivm"></a></li>
+                <li class="navIcon navIcon3"><a href="http://mall.jd.com/index-188438.html"></a></li>
                 <!--<li class="navIcon navIcon4"><a href="#"></a></li>-->
             </ul>
         </div>
