@@ -296,78 +296,74 @@ function brandPos(){
 			$('.kvBg').height('auto');
 			$('.kvBg .col-xs-12').height('auto');
 			}
-
-
-	for(var i=0;i<($('.brandLine').length+2);i++){
+	for(var i=0;i<($('.brandLine').length);i++){
 		//brand 延时显示内容、缓动内容
-		if((i+2)==($('.brandLine').length+2)){
-			sb[i]=parseInt($('.biTop').offset().top)+200;
-			sbw[i]=parseInt($('.biTop').height());
+		if((i+1)==($('.brandLine').length)){
+			sb[i]=parseInt($('.bibLeft').offset().top)+200;
+			sbw[i]=parseInt($('.bibLeft').height());
 			sbh[i]=sb[i]+sbw[i];
+			
+			sb[i+1]=parseInt($('.biTop').offset().top)+200;
+			sbw[i+1]=parseInt($('.biTop').height());
+			sbh[i+1]=sb[i]+sbw[i];
 			}
-			else if((i+1)==($('.brandLine').length+2)){
-				sb[i]=parseInt($('.bibLeft').offset().top)+200;
-				sbw[i]=parseInt($('.bibLeft').height());
+			else{
+				nb[i]=parseInt($('.brandLine'+(i+1)+' .needShowa').offset().top);
+				sb[i]=parseInt($('.brandLine'+(i+1)+'Left').offset().top)+200;
+				sbw[i]=parseInt($('.brandLine'+(i+1)+'Left').height());
 				sbh[i]=sb[i]+sbw[i];
 				}
-				else{
-					nb[i]=parseInt($('.brandLine'+(i+1)+' .needShowa').offset().top);
-					sb[i]=parseInt($('.brandLine'+(i+1)+'left').offset().top)+200;
-					sbw[i]=parseInt($('.brandLine'+(i+1)+'left').height());
-					sbh[i]=sb[i]+sbw[i];
-					}
 		}
 	}
-
+	
 //Brand滚动事件
 function brandScorll(){
 	var wst=$(window).scrollTop();
 	var this_scrollTop1 = (wst+wHeight*0.8);
 	var this_scrollTop2 = (wst+wHeight);
-
+	
 	brandPos();
-
-    for(var i=0;i<($('.brandLine').length+2);i++){
-		if((i+2)==($('.brandLine').length+2)){
+	
+	for(var i=0;i<($('.brandLine').length);i++){
+		if((i+1)==($('.brandLine').length)){
 			if(wWidth<=767){
-				$('.biTop').css('transform','translate(0,0)');
+				$('.bibLeft').css('transform','translate(0,0)');
+				$('.bibRight').css('transform','translate(0,0');
 				}
 				else{
 					if(this_scrollTop2>sb[i]&&this_scrollTop2<(sbh[i])){
 						var sy=(this_scrollTop2-sb[i]);
+						$('.bibLeft').css('transform','translate(0,'+(0-sy/15)+'px)');
+						$('.bibRight').css('transform','translate(0,'+sy/15+'px)');
+						}
+					}
+					
+			if(wWidth<=767){
+				$('.biTop').css('transform','translate(0,0)');
+				}
+				else{
+					if(this_scrollTop2>sb[i+1]&&this_scrollTop2<(sbh[i+1])){
+						var sy=(this_scrollTop2-sb[i+1]);
 						$('.biTop').css('transform','translate(0,'+(0-sy/10)+'px)');
 						}
 					}
 			}
-			else if((i+1)==($('.brandLine').length+2)){
+			else{
+				if(this_scrollTop1>=nb[i]){
+					$('.brandLine'+(i+1)+' .needShowa,.brandLine'+(i+1)+' .needShowb').css('opacity',1);
+					}
 				if(wWidth<=767){
-					$('.bibLeft').css('transform','translate(0,0)');
-					$('.bibRight').css('transform','translate(0,0');
+					$('.brandLine'+(i+1)+'Left').css('transform','translate(0,0)');
+					$('.brandLine'+(i+1)+'Right').css('transform','translate(0,0');
 					}
 					else{
 						if(this_scrollTop2>sb[i]&&this_scrollTop2<(sbh[i])){
 							var sy=(this_scrollTop2-sb[i]);
-							$('.bibLeft').css('transform','translate(0,'+(0-sy/15)+'px)');
-							$('.bibRight').css('transform','translate(0,'+sy/15+'px)');
+							$('.brandLine'+(i+1)+'Left').css('transform','translate(0,'+(0-sy/15)+'px)');
+							$('.brandLine'+(i+1)+'Right').css('transform','translate(0,'+sy/10+'px)');
 							}
 						}
 				}
-				else{
-					if(this_scrollTop1>=nb[i]){
-						$('.brandLine'+(i+1)+' .needShowa,.brandLine'+(i+1)+' .needShowb').css('opacity',1);
-						}
-					if(wWidth<=767){
-						$('.brandLine'+(i+1)+'Left').css('transform','translate(0,0)');
-						$('.brandLine'+(i+1)+'Right').css('transform','translate(0,0');
-						}
-						else{
-							if(this_scrollTop2>sb[i]&&this_scrollTop2<(sbh[i])){
-								var sy=(this_scrollTop2-sb[i]);
-								$('.brandLine'+(i+1)+'Left').css('transform','translate(0,'+(0-sy/15)+'px)');
-								$('.brandLine'+(i+1)+'Right').css('transform','translate(0,'+sy/10+'px)');
-								}
-							}
-					}
 		}
 	}
 
@@ -413,8 +409,8 @@ function drinkPos(){
 	for(var i=0;i<$('.drinkLine').length;i++){
 		//新点炫饮 延时显示内容、缓动内容
 		nb[i]=parseInt($('.drinkLine'+(i+1)+' .needShowa').offset().top);
-		sb[i]=parseInt($('.drinkLine'+(i+1)+'left').offset().top)+200;
-		sbw[i]=parseInt($('.drinkLine'+(i+1)+'left').height());
+		sb[i]=parseInt($('.drinkLine'+(i+1)+'Left').offset().top)+200;
+		sbw[i]=parseInt($('.drinkLine'+(i+1)+'Left').height());
 		sbh[i]=sb[i]+sbw[i];
 		}
 	}
