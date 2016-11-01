@@ -485,3 +485,14 @@ function showNavQc(){
 function closeNavQc(){
 	$('.navQcBlock').hide();
 	}
+	
+function showPcQc(){
+	$('.pcQcBg').show();
+	$('.pcQcImg').show();
+	$('.popQcCloseBtn').show();
+	}
+function closePcQc(){
+	$('.pcQcBg').hide();
+	$('.pcQcImg').hide();
+	$('.popQcCloseBtn').hide();
+	}

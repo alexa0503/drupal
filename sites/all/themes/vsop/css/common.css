@@ -154,7 +154,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 /*pop img video*/
 .videoPop{ position:fixed; left:0; top:0; z-index:1040; width:100%; height:100%; display:none; background:rgba(0,0,0,0.9);}
 .videoYouku{ width:100%; height:100%;}
-.popCloseBtn{ position:fixed; top:0; right:0; color:#FFF; font-size:20px; z-index:1050;}
+.popCloseBtn{ position:fixed; top:15px; right:15px; z-index:1050;}
 .html5-nav-mask,#html5-watermark,.html5boxVideoControls{ display:none;}
 
 .bxslider li a{ width:100%; display:inline-block;}
@@ -288,6 +288,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .noteSelOn{ background-position:0 0;}
 #noteBtn{ font-size:14px; color:#FFF; display:block; border:4px solid #48D731; width:74px; height:20px; line-height:20px; position:absolute; left:50%; top:230px; margin-left:-42px; text-align:center;}
 #noteBtn:hover,#noteBtn:focus{ color:#FFF;}
+
+.pcQcBg{ width:100%; height:100%; background:#000; position:fixed; left:0; top:0; opacity:0.8; -moz-opacity:0.8; -ms-opacity:0.8; -webkit-opacity:0.8; z-index:1050;}
+.pcQcImg{ position:fixed; width:347px; height:352px; left:50%; top:50%; margin:-176px 0 0 -173px; z-index:1050;}
+.popQcCloseBtn{ position:fixed; top:15px; right:15px; z-index:1050;}
 
 /*970*/
 @media (max-width: 992px) {

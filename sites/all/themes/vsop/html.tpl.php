@@ -28,5 +28,9 @@
   <!--youku video end-->
   <a href="javascript:void(0);" class="backToTop"><img src="/<?php echo path_to_theme();?>/images/backToTop.png"></a>
   <?php //print $page_bottom; ?>
+  
+  <div class="pcQcBg" style="display:none;"></div>
+  <img src="/<?php echo path_to_theme();?>/images/pcQc.png" class="pcQcImg" style="display:none;">
+  <a href="javascript:void(0);" class="popQcCloseBtn" onClick="closePcQc();" style="display:none;"><img src="/<?php echo path_to_theme();?>/images/btnClose.png"></a>
 </body>
 </html>
