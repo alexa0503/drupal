@@ -30,15 +30,15 @@ $title =  strip_tags($fields['title']->content);
 $content =  strip_tags($fields['body']->content);
 $ga = strip_tags($fields['field_ga']->content);
 ?>
-<div class="col-sm-4 col-xs-12 footContent fc1">
-    <div class="innerDiv"><a href="<?php echo $link;?>" onclick="<?php echo $ga;?>">
+<div class="col-sm-4 col-xs-12 footContent">
+    <div class="innerDiv"><a href="<?php echo $link;?>" onClick="<?php echo $ga;?>">
         <div class="fcTop"><img src="<?php echo $img_url;?>" width="100%" /></div>
         </a><div class="fcBottom"><a href="#1">
             <div class="fcbTitle">
                 <div class="fcbt1"><?php echo $title;?></div>
                 <div class="fcbt2"><?php echo $content;?></div>
             </div>
-        </a><div class="fcbLink"><a href="<?php echo $link;?>" onclick="<?php echo $ga;?>"></a><a href="<?php echo $link;?>" class="fcbBtn1"  onclick="<?php echo $ga;?>">点击查看</a> <a href="javascript:void(0);" class="fcbBtn2" onclick="showNavQc();"><img src="<?php echo path_to_theme()?>/images/footWechat.png"></a>
+        </a><div class="fcbLink"><a href="<?php echo $link;?>" onClick="<?php echo $ga;?>"></a><a href="<?php echo $link;?>" class="fcbBtn1"  onClick="<?php echo $ga;?>">点击查看</a> <a href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="<?php echo path_to_theme()?>/images/footWechat.png"></a>
                 <div class="clearfix"></div>
             </div>
         </div>

@@ -9,7 +9,7 @@ url('../fonts/din condensed bold.ttf') format('truetype'),
 url('../fonts/din condensed bold.svg#din regular') format('svg'); 
 }
 
-body{margin:0; padding:50px 0 0 0;text-align:left; font-size:12px; font-family:'Microsoft YaHei','SimHei',Arial; background:url(../images/pcBgM.jpg) center top repeat-y #f0f0f0;}
+body{margin:0; padding:50px 0 0 0;text-align:left; font-size:12px; font-family:'Hiragino Sans GB','Microsoft YaHei','SimHei',Arial; background:url(../images/pcBgM.jpg) center top repeat-y #f0f0f0;}
 table{border-collapse:collapse;}
 td,th{padding:0;}
 ul,li,dd,dl,dt{margin:0; padding:0; list-style:none; word-break:break-all;}
@@ -52,7 +52,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .navCloseBtn{ position:absolute; top:0; right:0; z-index:1050; padding:17px 25px; background:#262324;}
 
 /*index kv*/
-.jumbotron{ background:url(../images/index/kvBg.jpg) center top no-repeat; background-size:auto 100%;}
+.jumbotron{ background:url(../images/index/kvBg.jpg) center top no-repeat; background-size:auto 100%; overflow:hidden;}
 .kvEf{ background:url(../images/index/kvTxt.png) 0 0 no-repeat; width:365px; height:235px; left:50%; top:30%; margin-left:-306px;}
 .kvVideo{ font-size:22px; color:#FFF; left:115px; top:190px; width:320px; letter-spacing:3px;}
 .kvVideo img{ vertical-align:-12px; margin-left:10px;}
@@ -78,10 +78,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 .indexBlock{ background:url(../images/pcBgB.png) left bottom no-repeat; max-width:1920px; margin:0 auto;}
 .indexBlock .containerBg{  background:url(../images/pcBgT.png) center top no-repeat; padding-bottom:100px; overflow:hidden;}
 .indexVideo{ padding:100px 0 50px 0; color:#FFF;}
-.topTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:250px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:44px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.topTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:250px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:44px; font-weight:bold; margin:0 auto; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .topEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
-.subContext{ font-family:DIN,'Microsoft YaHei','SimHei'; letter-spacing:3px;}
-.topContext{ padding:30px 0 0 0; text-align:center; color:#FFF; font-size:14px; line-height:34px; font-family:'Microsoft YaHei','SimHei'; letter-spacing:3px;}
+.subContext{ font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei'; letter-spacing:3px;}
+.topContext{ padding:30px 0 0 0; text-align:center; color:#FFF; font-size:14px; line-height:34px; font-family:'Hiragino Sans GB','Microsoft YaHei','SimHei'; letter-spacing:3px;}
 .qLeft{ left:20%; bottom:5px;}
 .qRight{ right:20%; bottom:5px;}
 
@@ -188,7 +188,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .brandLineRight{ position:absolute; left:50%; bottom:50px; background:#262324; border-left:20px solid #48D731; border-bottom:none; padding:70px 0; z-index:500;}
 .brandLineRightHasGreen{ border-left:0; padding:0; background:none;}
 .brandLineRightInner{ position:absolute; left:0; bottom:0; background:#262324; border-left:20px solid #48D731; padding:70px 0; z-index:500; width:100%;}
-.brandTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 40px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.brandTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 40px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .brandTitleEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
 .brandContext{ width:290px; margin:0 auto; color:#FFF; font-size:14px; line-height:36px; padding:20px 0 0 15px; letter-spacing:3px;}
 .brandBuyLink{ width:290px; padding:20px 0 0 15px; margin:0 auto; color:#48D731; font-size:14px;}
@@ -207,7 +207,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .bibLeft{ width:48%; float:left; margin-top:40%;}
 .bibRight{ width:48%; float:right; margin-top:40%;}
 .bibTxt{ font-size:28px; line-height:110%; color:#FFF; position:absolute; left:10%; top:30%; text-shadow: 2px 2px 15px rgba(0,0,0,0.77);}
-.bibTxt span{ font-size:24px; font-family:DIN,'Microsoft YaHei','SimHei';}
+.bibTxt span{ font-size:24px; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .bibBottom{ border-left:20px solid #48D731; background:#FFF; font-size:14px; color:#262324; letter-spacing:3px; line-height:36px; padding:30px 40px 30px 30px;}
 .brandRightGreen{ border:15px solid #48D731; width:225px; height:225px; position:absolute; top:-550px; right:-60px; z-index:50;}
 
@@ -215,7 +215,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .eventBlock{ background:url(../images/pcBgB.png) left bottom no-repeat; max-width:1920px; margin:0 auto; margin-top:-5px;}
 .eventBlock .containerBg{  background:url(../images/pcBgT.png) center top no-repeat; padding-bottom:250px; overflow:hidden;}
 /*.eventBlock .container{ background:url(../images/index/indexBg.jpg) center top no-repeat; background-size:100% 100%; padding-bottom:250px; overflow:hidden;}*/
-.eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:250px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.eventTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:250px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; margin:0 auto; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .eventTitleEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
 .eventLine1,.eventLine2,.eventLine3{ position:relative;}
 .eventLine1{ margin-top:50px;}
@@ -242,10 +242,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 /*party*/
 .partyKvLine{ text-align:center; padding-top:50px; width:750px; position:absolute; left:50%; margin-left:-375px; top:20%;}
 .bx-wrapper img.qc{ margin-right:20px; float:left; width:auto;}
-.partyKvTxt{ padding:25px 0 0 0; font-size:14px; color:#FFF; letter-spacing:3px; line-height:36px; text-align:left; font-family:DIN,'Microsoft YaHei','SimHei';}
+.partyKvTxt{ padding:25px 0 0 0; font-size:14px; color:#FFF; letter-spacing:3px; line-height:36px; text-align:left; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 
 /*drink*/
-.drinkTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; position:absolute; top:40%; left:50%; margin-left:-100px; width:350px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; font-family:DIN,'Microsoft YaHei','SimHei';}
+.drinkTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; position:absolute; top:40%; left:50%; margin-left:-100px; width:350px; padding:0 0 40px 15px; color:#FFF; font-size:42px; line-height:46px; font-weight:bold; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .drinkEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
 .drinkNavOuter{ position:relative; width:100%; height:370px;}
 .drinkNav{ position:absolute; left:0; top:-70px; width:100%;}
@@ -267,7 +267,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .drinkLine{ padding-bottom:100px; position:relative;}
 .drinkLineLeft{ background:#262324; padding-bottom:70px;}
 .drinkLineRight{ position:absolute; right:0; bottom:20px; background:#262324; border-left:20px solid #48D731; padding:0;}
-.drinkSubTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 40px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Microsoft YaHei','SimHei';}
+.drinkSubTitle{ background:url(../images/subTitleBg.png) left bottom no-repeat; width:280px; padding:0 0 40px 15px; color:#FFF; font-size:32px; font-weight:bold; margin:0 auto; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .drinkSubEnTitle{ font-size:26px; color:#48D731; line-height:26px; padding:0; letter-spacing:2px; font-weight:normal;}
 .drinkContext{ width:290px; margin:0 auto; color:#FFF; font-size:14px; line-height:36px; padding:40px 0 0 10px;}
 .drinkLineLeftContent .drinkSubTitle{ width:75%; padding-top:90px; margin:0; margin-left:15%;}
@@ -325,8 +325,8 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.pcShow{ display:none;}
 	.mobileShow{ display:inline-block;}
 	
-	.qLeft{ width:30px; left:8%; bottom:70px;}
-	.qRight{ width:30px; right:8%;}
+	.qLeft{ width:30px; left:3%; bottom:70px;}
+	.qRight{ width:30px; right:3%;}
 	
 	.indexLine2{ margin-top:50px; margin-bottom:50px;}
 	.indexLine1left,.indexLine2left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
@@ -353,7 +353,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.topContext{ padding-left:30px; padding-right:30px;}
 	/*.brandBlock .container{ background-image:url(../images/brand/bg_m.jpg);}*/
 	.brandBlock{ background:url(../images/mobileBgB.png) right bottom no-repeat; background-size:100% auto;}
-	.txtTopBg{ background:url(../images/mobileBgT.jpg) left bottom no-repeat; background-size:100% auto;}
+	.txtTopBg{ background:url(../images/mobileBgT.jpg) left bottom no-repeat #272324; background-size:100% auto;}
 	.brandContext{ padding:40px 0 0 15px; width:330px;}
 	.brandBuyLink{ padding:40px 0 0 15px; width:330px;}
 	.brandLineRightInner{ position:static; left:auto; top:auto; bottom:auto;}
