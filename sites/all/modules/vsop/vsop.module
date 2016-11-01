@@ -1,0 +1,10 @@
+<?php
+
+function vsop_user_login(&$edit, $account) {
+  //drupal_goto('admin');
+  $edit['redirect'] = 'admin';
+}
+function vsop_user_logout(&$edit, $account) {
+  //drupal_goto('user/login');
+  $edit['redirect'] = 'user/login';
+}

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Override or insert variables into the maintenance page template.
  */
@@ -50,6 +51,9 @@ function vsop_js_alter(&$javascript) {
  * Override or insert variables into the html template.
  */
 function vsop_preprocess_html(&$vars) {
+    if( arg(0) != 'agree' && $_COOKIE["has_read"] != 'yes' ){
+        drupal_goto('agree');
+    }
   // Add conditional CSS for IE8 and below.
   //drupal_add_css(path_to_theme() . '/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 999, 'preprocess' => FALSE));
   // Add conditional CSS for IE7 and below.
@@ -159,7 +163,6 @@ function vsop_menu_tree__main_menu($variables) {
         <a href="javascript:void(0);" onClick="showNavQc();"><img src="'.path_to_theme().'/images/navIcon1.png" width="23"></a>
         <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon2.png" width="23"></a>
         <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon3.png" width="23"></a>
-        <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon4.png" width="23"></a>
     </div></ul>';
     return $ul;
 }

@@ -5,6 +5,10 @@
     <title><?php print $head_title; ?></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <?php if (arg(0) == 'agree'):?>
+    <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/common.css">
+    <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/animate.min.css">
+    <?php else:?>
     <link rel="shortcut icon" href="/<?php echo path_to_theme();?>/favicon.ico"/>
 	<link rel="bookmark" href="/<?php echo path_to_theme();?>/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,12 +16,13 @@
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/js/bxslider/jquery.bxslider.css">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/common.css">
+    <?php endif;?>
   <?php //print $styles; ?>
   <script src="/<?php echo path_to_theme();?>/js/jquery-2.1.1.min.js"></script>
 </head>
 <body>
   <?php //print $page_top; ?>
-  <?php print $page; ?>
+  <?php print $page;?>
   <?php //print $scripts; ?>
 
   <!--youku video start-->
@@ -28,7 +33,7 @@
   <!--youku video end-->
   <a href="javascript:void(0);" class="backToTop"><img src="/<?php echo path_to_theme();?>/images/backToTop.png"></a>
   <?php //print $page_bottom; ?>
-  
+
   <div class="pcQcBg" style="display:none;"></div>
   <img src="/<?php echo path_to_theme();?>/images/pcQc.png" class="pcQcImg" style="display:none;">
   <a href="javascript:void(0);" class="popQcCloseBtn" onClick="closePcQc();" style="display:none;"><img src="/<?php echo path_to_theme();?>/images/btnClose.png"></a>

@@ -1,0 +1,3 @@
+name = vsop模块
+description = vsop主题需要用到的模块
+core = 7.x

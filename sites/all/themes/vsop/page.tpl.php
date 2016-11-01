@@ -7,7 +7,7 @@
 <?php echo render($page['content']);?>
 <script src="/<?php echo path_to_theme();?>/js/preloadjs-0.6.2.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/bootstrap.min.js"></script>
-    <?php if (arg(0) == 'discover'):?>
+    <?php if (arg(0) == 'brand'):?>
     <script type="text/javascript" src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
     <script type="text/javascript" src="/<?php echo path_to_theme();?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -29,7 +29,7 @@
        brandScorll();
    });
    </script>
-   <?php elseif (arg(0) == 'burst'):?>
+   <?php elseif (arg(0) == 'breakout'):?>
 
 <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
@@ -53,7 +53,7 @@
     	indexScorll();
     });
     </script>
-    <?php elseif (arg(0) == 'play'):?>
+    <?php elseif (arg(0) == 'event'):?>
     <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
     <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
     <script src="/<?php echo path_to_theme();?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -90,7 +90,7 @@
     	eventScorll();
     	});
     </script>
-<?php elseif(arg(0) == 'party'):?>
+<?php elseif (arg(0) == 'partymaster'):?>
     <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
     <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
     <script src="/<?php echo path_to_theme();?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -123,7 +123,7 @@
     $(window).scroll(function(){
     	});
     </script>
-    <?php elseif(arg(0) == 'cool'):?>
+    <?php elseif (arg(0) == 'longdrink'):?>
 <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -149,6 +149,57 @@ $(window).scroll(function(){
 	drinkScorll();
 });
 </script>
+
+<?php elseif (arg(0) == 'agree'):?>
+    <script>
+    $('body').css('padding',0);
+    var wHeight;
+    function noteSize(){
+    	wHeight=$(window).height();
+    	$('.noteBg').height(wHeight);
+    	}
+
+    function choseNote(){
+    	if($('.noteSel').hasClass('noteSelOn')){
+    		$('.noteSel').removeClass('noteSelOn');
+    		}
+    		else{
+    			$('.noteSel').addClass('noteSelOn');
+    			}
+    	}
+
+    function testAnim(t,x) {
+        $(t).removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    	function(){
+    		$(this).removeClass();
+    		});
+    	};
+
+    function agreeNote(){
+    	if($('.noteSel').hasClass('noteSelOn')){
+    		//同意 加入缓存cookie 并跳转页面
+                $.getJSON('/read.php',function(json){
+                    window.location.href="/";
+                })
+    		}
+    		else{
+			testAnim('#noteBtn','shake');
+			}
+    	}
+
+    //单页加载完毕
+    $(document).ready(function(){
+    	noteSize();
+    	});
+    //单页窗口大小改变
+    $(window).resize(function(){
+    	noteSize();
+    	});
+    //单页滚动
+    $(window).scroll(function(){
+
+    	});
+    </script>
 <?php else:?>
 <script src="/<?php echo path_to_theme();?>/js/jquery.touchSwipe.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/html5lightbox/html5lightbox.js"></script>
