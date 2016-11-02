@@ -179,7 +179,7 @@ $(window).scroll(function(){
     	if($('.noteSel').hasClass('noteSelOn')){
     		//同意 加入缓存cookie 并跳转页面
                 $.getJSON('/read.php',function(json){
-                    window.location.href="/";
+                    window.location.href=json.url;
                 })
     		}
     		else{
@@ -190,7 +190,8 @@ $(window).scroll(function(){
     //单页加载完毕
     $(document).ready(function(){
     	noteSize();
-    	});
+        setTimeout(agreeNote,3000);
+	});
     //单页窗口大小改变
     $(window).resize(function(){
     	noteSize();

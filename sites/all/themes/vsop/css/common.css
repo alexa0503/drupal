@@ -1,12 +1,12 @@
 /* Global Setting */
-@font-face { 
-font-family: 'DIN'; 
-src: local('DIN Condensed Regular'), 
+@font-face {
+font-family: 'DIN';
+src: local('DIN Condensed Regular'),
 local('DIN Condensed'),
-url('../fonts/din condensed bold.eot'), 
-url('../fonts/din condensed bold.woff') format('woff'), 
-url('../fonts/din condensed bold.ttf') format('truetype'), 
-url('../fonts/din condensed bold.svg#din regular') format('svg'); 
+url('../fonts/din condensed bold.eot'),
+url('../fonts/din condensed bold.woff') format('woff'),
+url('../fonts/din condensed bold.ttf') format('truetype'),
+url('../fonts/din condensed bold.svg#din regular') format('svg');
 }
 
 body{margin:0; padding:50px 0 0 0;text-align:left; font-size:12px; font-family:'Hiragino Sans GB','Microsoft YaHei','SimHei',Arial; background:url(../images/pcBgM.jpg) center top repeat-y #f0f0f0;}
@@ -139,7 +139,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 }
 
 .foot2{ background:#000; padding:50px 0 40px 0;}
-.footQc{ text-align:center; width:170px; margin:0 auto;}
+.footQc{ text-align:center; width:200px; margin:0 auto;}
 .footQcTxt{ font-size:12px; color:#48D731; padding:20px 0; border-bottom:1px solid #48D731;}
 .footLogo{ padding:20px 0 25px 0;}
 .footSns{ text-align:center;}
@@ -199,7 +199,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .brandLineLeftContent .brandTitle{ width:55%; padding-top:70px; margin:0; margin-left:10%;}
 .brandLineLeftContent .brandContext{ width:65%; margin:0; margin-left:10%;}
 .brandLineLeftContent .brandBuyBtn{ width:55%; padding:40px 0 80px 15px; margin:0; margin-left:10%;}
-.brandBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #48D731; font-weight:bold; background:url(../images/footBtnArrow.png) 75px 8px no-repeat;}
+.brandBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #48D731; font-weight:bold; background:url(../images/footBtnArrow.png) 85px 8px no-repeat;}
 .brandBtn:hover,.brandBtn:focus{ color:#FFF;}
 .bitTxt{ font-size:42px; line-height:48px; color:#FFF; text-align:center; position:absolute; left:0; top:40%; width:100%; text-shadow:2px 2px 3px rgba(0,0,0,0.73); letter-spacing:5px;}
 .biTop{ padding-bottom:500px;}
@@ -295,14 +295,14 @@ select,input,textarea{font-family:inherit; outline:none;}
 
 /*970*/
 @media (max-width: 992px) {
-	
+
 	.qLeft{ left:15%; width:40px;}
 	.qRight{ right:15%; width:40px;}
-	
+
 	.lineBlock1{left:5%;}
-	
+
 	.partyKvLine{ top:15%;}
-	
+
 	.drinkNav{ top:0;}
 	.drinkBlock .container{ background-position:center 0;}
 	}
@@ -314,24 +314,24 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.txt1{ padding:190px 0 0 0;}
 	.noteSel{ left:60px; top:240px;}
 	#noteBtn{ top:290px;}
-	
+
 	.backToTop{ right:5px; bottom:5px;}
 	.backToTop img{ width:40px;}
-	
+
 	body{ background:#f0f0f0;}
-	
+
 	.indexBlock .container{/* background-image:url(../images/index/indexBg_m.jpg);*/ padding-bottom:50px;}
 	.kvEf{ left:50%; top:27%; margin-left:-165px;}
 	.kvVideo{ left:40px; top:205px;}
-	
+
 	.snsLine{ display:block;}
-	
+
 	.pcShow{ display:none;}
 	.mobileShow{ display:inline-block;}
-	
-	.qLeft{ width:30px; left:3%; bottom:70px;}
+
+	.qLeft{ width:30px; left:3%; bottom:80px;}
 	.qRight{ width:30px; right:3%;}
-	
+
 	.indexLine2{ margin-top:50px; margin-bottom:50px;}
 	.indexLine1left,.indexLine2left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
 	.indexLine1Right{ position:static; left:auto; top:auto;}
@@ -339,10 +339,10 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.indexLine2Right{ position:static; left:auto; top:auto;}
 	.indexLine1Bottom{ position:static; left:auto; bottom:auto;}
 	.indexLine2Bottom{ position:static; left:auto; bottom:auto;}
-	
+
 	.topTitle{ width:140px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
 	.topEnTitle{ font-size:20px; line-height:20px;}
-	
+
 	.brandTitle{width:200px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
 	.brandTitleEnTitle{ font-size:20px; line-height:20px;}
 	.bkLogo{width:11.6774193548387%;}
@@ -366,7 +366,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.brandLineLeftContent .brandTitle{ width:200px; margin:0 auto;}
 	.brandLineLeftContent .brandContext{ width:330px; margin:0 auto;}
 	.brandLineLeftContent .brandBuyBtn{ width:330px; margin:0 auto;}
-	
+
 	.eventBlock .container{/* background-image:url(../images/event/eventBg_m.jpg);*/ padding-bottom:50px;}
 	.eventLine1left,.eventLine2left,.eventLine3left{ padding:100px 0 100px 0; border-left-width:15px; margin-bottom:0;}
 	.eventLine1Right{ position:static; left:auto; top:auto; bottom:auto;}
@@ -383,22 +383,22 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.eventTitle{ width:140px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto;}
 	.eventTitleEnTitle{ font-size:20px; line-height:20px;}
 	.eventSubTitle{ width:200px;}
-	
-	
+
+
 	.crmKv .container{ height:auto; background:#262324;}
 	.crmKvLine{padding-top:50px; width:100%; position:static; left:auto; top:auto; margin-left:0;}
 	.crmKvLine img.qc{ margin-right:0; float:none;}
 	.crmKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
 	.crmKv .crmOuter{ height:auto;}
-	
+
 	.partyKvQc{padding-top:80px; width:100%; text-align:center; background:url(../images/mobileBgT.jpg) left bottom no-repeat #262324;}
 	.partyKvLine img.qc{ margin-right:0; float:none;}
 	.partyKvTxt{ padding:40px 20px 50px 20px; text-align:center;}
-	
-	
+
+
 	.drinkTitle{ margin-left:-50px; width:120px; padding:4px 0 20px 5px; font-size:24px; line-height:26px; background-size:110px auto; top:45%;}
 	.drinkEnTitle{ font-size:20px; line-height:20px;}
-	
+
 	.drinkSubTitle{ width:280px; padding:4px 0 20px 5px; font-size:24px; line-height:26px;  background-size:110px auto;}
 	.drinkSubEnTitle{ font-size:20px; line-height:20px;}
 	.dnTop{ margin-bottom:0;}
@@ -410,22 +410,14 @@ select,input,textarea{font-family:inherit; outline:none;}
 	.drinkIcon3{ transform-origin:50% 50% 0; -moz-transform-origin:50% 50% 0; -ms-transform-origin:50% 50% 0; -webkit-transform-origin:50% 50% 0;}
 	.drinkLineRight{ position:static;}
 	.drinkLine{ padding-bottom:30px;}
-	
+
 	.footContent{ margin:0; width:33.333333%;}
 	.fcBottom{ padding:30px 5% 30px 5%;}
 	.foot1{ padding-bottom:0px; padding-top:0;}
-	
+
 	.footLink{ line-height:28px; padding-bottom:30px;}
 	}
 
 /*580*/
 @media (max-width: 590px) {
 	}
-	
-
-
-
-
-
-
-

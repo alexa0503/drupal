@@ -51,7 +51,8 @@ function vsop_js_alter(&$javascript) {
  * Override or insert variables into the html template.
  */
 function vsop_preprocess_html(&$vars) {
-    if( arg(0) != 'agree' && $_COOKIE["has_read"] != 'yes' ){
+    if( arg(0) != 'agree' && $_COOKIE["has_read"] != 'yes' && arg(0) != 'user'){
+        setcookie("redirect_url",$_SERVER['REQUEST_URI'],time()+365*24*3600);
         drupal_goto('agree');
     }
   // Add conditional CSS for IE8 and below.

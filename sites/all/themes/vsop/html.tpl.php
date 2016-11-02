@@ -5,13 +5,13 @@
     <title><?php print $head_title; ?></title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="shortcut icon" href="/<?php echo path_to_theme();?>/favicon.ico"/>
+	<link rel="bookmark" href="/<?php echo path_to_theme();?>/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <?php if (arg(0) == 'agree'):?>
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/common.css">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/animate.min.css">
     <?php else:?>
-    <link rel="shortcut icon" href="/<?php echo path_to_theme();?>/favicon.ico"/>
-	<link rel="bookmark" href="/<?php echo path_to_theme();?>/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/bootstrap.css">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="/<?php echo path_to_theme();?>/js/bxslider/jquery.bxslider.css">
