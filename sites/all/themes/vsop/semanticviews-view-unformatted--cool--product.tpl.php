@@ -7,8 +7,8 @@
                 <div class="container">
                     <div class="col-md-10 col-md-offset-1 col-sm-12 dnOuter">
                     	<div class="col-xs-12 dnTop">
-                        	<div class="col-xs-6 dnTab dnTabActive"><a href="javascript:void(0);" onClick="changeDnTab(0);">经典主打</a></div>
-                            <div class="col-xs-6 dnTab"><a href="javascript:void(0);" onClick="changeDnTab(1);">季节特供</a></div>
+                        	<div class="col-xs-12 dnTab dnTabActive"><a href="javascript:void(0);" onClick="changeDnTab(0);">经典主打</a></div>
+                            <!--<div class="col-xs-6 dnTab"><a href="javascript:void(0);" onClick="changeDnTab(1);">季节特供</a></div>-->
                             <div class="clearfix"></div>
                         </div>
                         <div class="dtContent dtContent1">

@@ -162,8 +162,8 @@ function vsop_menu_tree__main_menu($variables) {
     $ul = '<ul class="nav navbar-nav">' . $variables['tree'] . '
     <div class="snsLine">
         <a href="javascript:void(0);" onClick="showNavQc();"><img src="'.path_to_theme().'/images/navIcon1.png" width="23"></a>
-        <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon2.png" width="23"></a>
-        <a href="javascript:void(0);"><img src="'.path_to_theme().'/images/navIcon3.png" width="23"></a>
+        <a href="http://weibo.com/hennessyclassivm"><img src="'.path_to_theme().'/images/navIcon2.png" width="23"></a>
+        <a href="https://shop.m.jd.com/search?shopId=188438&shopCategoryId=4315431"><img src="'.path_to_theme().'/images/navIcon3.png" width="23"></a>
     </div></ul>';
     return $ul;
 }
