@@ -32,7 +32,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .navbar-inverse{ border:none;}
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ background:#262324;}
 .navbar-brand{ padding:13px 23px; background:#52da3f;}
-.navbar-brand img{ width:94px;}
+.navbar-brand img{ width:110px;}
 .nav.navbar-right > li.navIcon{ background:url(../images/navIcon.png) 0 0 no-repeat; background-size:133px 15px; width:16px; height:15px; padding:0; margin:20px 10px 0 10px;}
 .nav.navbar-right > li.navIcon1{ background-position:0 0;}
 .nav.navbar-right > li.navIcon2{ background-position:-42px 0; width:18px;}
@@ -199,14 +199,14 @@ select,input,textarea{font-family:inherit; outline:none;}
 .brandLineLeftContent .brandTitle{ width:55%; padding-top:70px; margin:0; margin-left:10%;}
 .brandLineLeftContent .brandContext{ width:65%; margin:0; margin-left:10%;}
 .brandLineLeftContent .brandBuyBtn{ font-size:14px; width:55%; padding:40px 0 80px 15px; margin:0; margin-left:10%;}
-.brandBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #48D731; font-weight:bold; background:url(../images/footBtnArrow.png) 85px 8px no-repeat;}
+.brandBtn{ display:inline-block; padding:8px 50px 10px 10px; color:#FFF; border:2px solid #48D731; font-weight:bold; background:url(../images/footBtnArrow.png) 95px 8px no-repeat;}
 .brandBtn:hover,.brandBtn:focus{ color:#FFF;}
 .bitTxt{ font-size:42px; line-height:48px; color:#FFF; text-align:center; position:absolute; left:0; top:40%; width:100%; text-shadow:2px 2px 3px rgba(0,0,0,0.73); letter-spacing:5px;}
 .biTop{ padding-bottom:500px;}
 .biBottom{ position:absolute; left:0; top:0;}
 .bibLeft{ width:48%; float:left; margin-top:40%;}
 .bibRight{ width:48%; float:right; margin-top:40%;}
-.bibTxt{ font-size:28px; line-height:110%; color:#FFF; position:absolute; left:10%; top:30%; text-shadow: 2px 2px 15px rgba(0,0,0,3.77);}
+.bibTxt{ font-size:28px; line-height:110%; color:#FFF; position:absolute; left:10%; top:30%; text-shadow: 2px 2px 5px rgba(0,0,0,3.77);}
 .bibTxt span{ font-size:24px; font-family:DIN,'Hiragino Sans GB','Microsoft YaHei','SimHei';}
 .bibBottom{ border-left:20px solid #48D731; background:#FFF; font-size:14px; color:#262324; letter-spacing:3px; line-height:36px; padding:30px 40px 30px 30px;}
 .brandRightGreen{ border:15px solid #48D731; width:225px; height:225px; position:absolute; top:-550px; right:-60px; z-index:50;}
@@ -279,6 +279,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .drinkBorder2{ border:15px solid #48D731; width:225px; height:225px; bottom:-100px; right:-60px; z-index:50;}
 
 .backToTop{ position:fixed; right:100px; bottom:100px; z-index:1000; display:none;}
+.backToTop img{ width:56px;}
 
 .noteBg{ background:url(../images/noteBg.jpg) center top no-repeat; background-size:100% 100%; width:100%;}
 .noteContent{ background:url(../images/noteBg2.png) 0 0 no-repeat; background-size:100% 100%; width:500px; height:300px; overflow:hidden; position:fixed; left:50%; top:50%; margin:-150px 0 0 -250px;}
@@ -316,7 +317,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 	#noteBtn{ top:290px;}
 
 	.backToTop{ right:5px; bottom:5px;}
-	.backToTop img{ width:40px;}
+	.backToTop img{ width:28px;}
 
 	body{ background:#f0f0f0;}
 
