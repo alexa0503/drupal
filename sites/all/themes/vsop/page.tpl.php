@@ -42,6 +42,7 @@
     $(document).ready(function(){
     	indexPos();
     	indexScorll();
+
     	loadIndexImg();
     });
     //单页窗口大小改变

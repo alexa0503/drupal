@@ -178,7 +178,7 @@ select,input,textarea{font-family:inherit; outline:none;}
 .popArticle{ color:#FFF; padding:25px;}
 
 /*brand*/
-.kvBg{ background:url(../images/brand/kv.png) center top no-repeat; background-size:auto 100%; width:100%;}
+.kvBg{ background:url(../images/brand/kv.jpg) center top no-repeat; background-size:auto 100%; width:100%;}
 .bkLogo{ top:5.5710306406685%; right:9.0422535211268%; width:9.6774193548387%;}
 .bkBottle{ bottom:0; right:8.6901408450704%; width:10.4838709677419%;}
 .brandBlock{ background:url(../images/pcBgB.png) left bottom no-repeat; max-width:1920px; margin:0 auto;}
