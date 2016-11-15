@@ -19,12 +19,6 @@ function vsop_css_alter(&$css){
     }
     //var_dump(array_keys($css));
 }
-//semanticviews-view-unformatted--cool--product-menu.tpl
-function vsop_preprocess_semanticviews_view_unformatted(&$variables) {
-    //var_dump($variables['view']->result[0]);
-    //if( $variables['view'])
-    //var_dump($variables['name'],$variables['display_id']);
-}
 function vsop_js_alter(&$javascript) {
 
     //drupal_static_reset('drupal_add_js');
@@ -67,12 +61,12 @@ function vsop_preprocess_html(&$vars) {
  * Override or insert variables into the page template.
  */
 function vsop_preprocess_page(&$vars) {
-  $vars['primary_local_tasks'] = $vars['tabs'];
-  unset($vars['primary_local_tasks']['#secondary']);
-  $vars['secondary_local_tasks'] = array(
-    '#theme' => 'menu_local_tasks',
-    '#secondary' => $vars['tabs']['#secondary'],
-  );
+}
+/**
+ * Override or insert variables into the node template.
+ */
+function vsop_preprocess_node(&$vars) {
+  //$variables['submitted'] = $variables['date'] . ' — ' . $variables['name'];
 }
 
 /**
@@ -161,9 +155,9 @@ function vsop_menu_tree__main_menu($variables) {
     //$div = ($level == 1) ? '<!--<div></div>-->' : '';
     $ul = '<ul class="nav navbar-nav">' . $variables['tree'] . '
     <div class="snsLine">
-        <a href="javascript:void(0);" onClick="showNavQc();"><img src="'.path_to_theme().'/images/navIcon1.png" width="23"></a>
-        <a href="http://weibo.com/hennessyclassivm"><img src="'.path_to_theme().'/images/navIcon2.png" width="23"></a>
-        <a href="https://shop.m.jd.com/search?shopId=188438&shopCategoryId=4315431"><img src="'.path_to_theme().'/images/navIcon3.png" width="23"></a>
+        <a href="javascript:void(0);" onClick="showNavQc();"><img src="/'.path_to_theme().'/images/navIcon1.png" width="23"></a>
+        <a href="http://weibo.com/hennessyclassivm" target="_blank"><img src="/'.path_to_theme().'/images/navIcon2.png" width="23"></a>
+        <a href="https://shop.m.jd.com/search?shopId=188438&shopCategoryId=4315431" target="_blank"><img src="/'.path_to_theme().'/images/navIcon3.png" width="23"></a>
     </div></ul>';
     return $ul;
 }

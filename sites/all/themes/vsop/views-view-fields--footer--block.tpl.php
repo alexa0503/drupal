@@ -41,4 +41,4 @@ $content =  $fields['body']->content;
         <div class="footLink">
             <?php echo $content;?>
         </div>
-        <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow">沪ICP备10018200号</div>
+        <div class="footIcp">&copy; 2016 酩悦轩尼诗帝亚吉欧洋酒（上海）<br class="mobileShow">有限公司版权所有. 保留一切权利 <br class="mobileShow"><br class="mobileShow"><a href="http://www.miitbeian.gov.cn/" target="_blank" style="color:#fff;">沪ICP备10018200号</a></div>

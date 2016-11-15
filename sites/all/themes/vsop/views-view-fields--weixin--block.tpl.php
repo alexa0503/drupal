@@ -38,7 +38,7 @@ $ga = strip_tags($fields['field_ga']->content);
                 <div class="fcbt1"><?php echo $title;?></div>
                 <div class="fcbt2"><?php echo $content;?></div>
             </div>
-        </a><div class="fcbLink"><a href="<?php echo $link;?>" onClick="<?php echo $ga;?>"></a><a href="<?php echo $link;?>" class="fcbBtn1"  onClick="<?php echo $ga;?>">点击查看</a> <a href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="<?php echo path_to_theme()?>/images/footWechat.png"></a>
+        </a><div class="fcbLink"><a href="<?php echo $link;?>" onClick="<?php echo $ga;?>"></a><a href="<?php echo $link;?>" class="fcbBtn1"  onClick="<?php echo $ga;?>">点击查看</a> <a href="javascript:void(0);" class="fcbBtn2" onClick="showNavQc();"><img src="/<?php echo path_to_theme()?>/images/footWechat.png"></a>
                 <div class="clearfix"></div>
             </div>
         </div>

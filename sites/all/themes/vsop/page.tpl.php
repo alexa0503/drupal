@@ -3,7 +3,7 @@
   <div id="help">
     <?php echo render($page['help']); ?>
   </div>
-<?php else: ?>
+<?php else:?>
 <?php echo render($page['content']);?>
 <script src="/<?php echo path_to_theme();?>/js/preloadjs-0.6.2.min.js"></script>
 <script src="/<?php echo path_to_theme();?>/js/bootstrap.min.js"></script>

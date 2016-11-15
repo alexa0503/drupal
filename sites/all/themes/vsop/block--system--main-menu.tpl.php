@@ -7,16 +7,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <img src="<?php print path_to_theme();?>/images/navClose.png" class="navClose" style="display:none;">
+                <img src="/<?php print path_to_theme();?>/images/navClose.png" class="navClose" style="display:none;">
             </button>
-            <div class="navbar-brand"><img src="<?php print path_to_theme();?>/images/navLogo.png"></div>
+            <div class="navbar-brand"><img src="/<?php print path_to_theme();?>/images/navLogo.png"></div>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <?php print $content; ?>
             <ul class="nav navbar-nav navbar-right">
                 <li class="navIcon navIcon1"><a href="javascript:void(0);" onClick="showPcQc();"></a></li>
-                <li class="navIcon navIcon2"><a href="http://weibo.com/hennessyclassivm"></a></li>
-                <li class="navIcon navIcon3"><a href="http://mall.jd.com/view_page-36710429.html"></a></li>
+                <li class="navIcon navIcon2"><a href="http://weibo.com/hennessyclassivm" target="_blank"></a></li>
+                <li class="navIcon navIcon3"><a href="http://mall.jd.com/view_page-36710429.html" target="_blank"></a></li>
                 <!--<li class="navIcon navIcon4"><a href="#"></a></li>-->
             </ul>
         </div>
@@ -24,8 +24,8 @@
 
     <div class="navQcBlock" style="display:none;">
     	<div class="qcBg" onClick="closeNavQc();"></div>
-        <img src="<?php print path_to_theme();?>/images/navQc.png" width="147" height="140" class="navQc">
-        <a href="javascript:void(0);" class="navCloseBtn" onClick="closeNavQc();"><img src="<?php print path_to_theme();?>/images/navClose.png"></a>
+        <img src="/<?php print path_to_theme();?>/images/navQc.png" width="147" height="140" class="navQc">
+        <a href="javascript:void(0);" class="navCloseBtn" onClick="closeNavQc();"><img src="/<?php print path_to_theme();?>/images/navClose.png"></a>
     </div>
 </nav>
 <!--nav end-->

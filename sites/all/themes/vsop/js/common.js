@@ -186,9 +186,13 @@ var manifest;
 var preload;
 
 function loadIndexImg() {
+    //修改内容
+    $('.staticKv .jumbotron').css('opacity', 1);
+    $('.jumbotron .kvEf').hide();
+    return;
   manifest = [];
   manifest.push('/sites/all/themes/vsop/images/index/kvBg.jpg');
-  for (var i = 1; i <= 66; i++) {
+  for (var i = 1; i <= 40; i++) {
     var s = i;
     s = s.toString();
     if (s.length == 1) {
@@ -196,7 +200,7 @@ function loadIndexImg() {
     } else if (s.length == 2) {
       s = '0' + s;
     }
-    manifest.push('/sites/all/themes/vsop/images/index/act/' + s + '.png');
+    manifest.push('/sites/all/themes/vsop/images/index/act1/kv0' + s + '.png');
   }
 
   startPreload();
@@ -211,16 +215,16 @@ function startPreload() {
 
 function loadComplete(event) {
   kvt = setInterval(function() {
-    playKv()
+    //playKv()
   }, 35);
 }
 
 var kvt;
 var kvs = 1;
-var kvm = 66;
+var kvm = 40;
 
 function playKv() {
-    $('.kvEf').hide();
+    //$('.kvEf').hide();
   if (kvs == 1) {
     $('.staticKv .jumbotron').css('opacity', 1);
   }
@@ -234,7 +238,7 @@ function playKv() {
   } else if (kvsstr.length == 2) {
     kvsstr = '0' + kvsstr;
   }
-  //$('.kvEf').css('background-image', 'url(/sites/all/themes/vsop/images/index/act/' + kvsstr + '.png)');
+  $('.kvEf').css('background-image', 'url(/sites/all/themes/vsop/images/index/act1/kv0' + kvsstr + '.png)');
   kvs++;
 }
 
